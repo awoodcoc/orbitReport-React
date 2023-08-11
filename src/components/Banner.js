@@ -1,10 +1,11 @@
+import "./styling.css";
+
 const Banner = () => {
   return (
-    <header>
-      {" "}
-      Orbit Report
+    <div>
+      <header>Orbit Report </header>
       <p>Click the buttons to check the orbit type!</p>
-    </header>
+    </div>
   );
 };
 
