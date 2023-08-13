@@ -8,10 +8,12 @@ function App() {
   const [sat, setSat] = useState(satData);
   const displaySats = [...new Set(satData.map((data) => data.orbitType))];
   const filterByType = (currentType) => {
+    console.log(currentType);
     const displaySats = satData.filter((newSatDisplay) => {
       return newSatDisplay.orbitType === currentType;
     });
     setSat(displaySats);
+    console.log(displaySats);
   };
   return (
     <>
